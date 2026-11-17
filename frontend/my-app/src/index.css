@@ -1,0 +1,207 @@
+﻿
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "@fontsource-variable/geist";
+
+/* ================================
+   LIGHT THEME - BEIGE & PINK
+================================ */
+
+:root {
+  color-scheme: light;
+  --background: #F7F5FF;
+  --foreground: #24213D;
+  --card: #FFFFFF;
+  --card-foreground: #24213D;
+  --popover: #FFFFFF;
+  --popover-foreground: #24213D;
+  --primary: #7047EB;
+  --primary-foreground: #FFFFFF;
+  --secondary: #EAE4FF;
+  --secondary-foreground: #5634C5;
+  --muted: #EFEDFA;
+  --muted-foreground: #77738F;
+  --accent: #DDF8F2;
+  --accent-foreground: #087F70;
+  --destructive: #F05270;
+  --destructive-foreground: #FFFFFF;
+  --border: #E5E0F2;
+  --input: #E5E0F2;
+  --ring: #9276F5;
+  --chart-1: #7047EB;
+  --chart-2: #16B8A6;
+  --chart-3: #FF7195;
+  --chart-4: #FFA940;
+  --chart-5: #438DFF;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #24213D;
+  --sidebar-primary: #7047EB;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #EEE9FF;
+  --sidebar-accent-foreground: #5634C5;
+  --sidebar-border: #E5E0F2;
+  --sidebar-ring: #9276F5;
+  --font-sans: "Geist Variable", Inter, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: monospace;
+  --radius: 0.85rem;
+  --tracking-normal: 0;
+  --spacing: 0.25rem;
+}
+
+/* ================================
+   DARK THEME - DUSTY ROSE
+================================ */
+
+.dark {
+  color-scheme: dark;
+  --background: #17152B;
+  --foreground: #F5F2FF;
+  --card: #211E3A;
+  --card-foreground: #F5F2FF;
+  --popover: #211E3A;
+  --popover-foreground: #F5F2FF;
+  --primary: #A48AFF;
+  --primary-foreground: #21183F;
+  --secondary: #302951;
+  --secondary-foreground: #E7DEFF;
+  --muted: #292641;
+  --muted-foreground: #B0A9CC;
+  --accent: #183D3B;
+  --accent-foreground: #76E5D1;
+  --destructive: #FF718B;
+  --destructive-foreground: #FFFFFF;
+  --border: #393451;
+  --input: #393451;
+  --ring: #A48AFF;
+  --chart-1: #A48AFF;
+  --chart-2: #35D6BE;
+  --chart-3: #FF789C;
+  --chart-4: #FFB454;
+  --chart-5: #68A8FF;
+  --sidebar: #1D1A34;
+  --sidebar-foreground: #F5F2FF;
+  --sidebar-primary: #A48AFF;
+  --sidebar-primary-foreground: #21183F;
+  --sidebar-accent: #302951;
+  --sidebar-accent-foreground: #E7DEFF;
+  --sidebar-border: #393451;
+  --sidebar-ring: #A48AFF;
+}
+
+/* ================================
+   TAILWIND THEME VARIABLES
+================================ */
+
+/* Semantic color aliases kept as plain CSS custom properties so the theme
+   remains valid in CSS tooling without the Tailwind-specific @theme rule. */
+:root {
+  color-scheme: light;
+  --background: #F7F5FF;
+  --foreground: #24213D;
+  --card: #FFFFFF;
+  --card-foreground: #24213D;
+  --popover: #FFFFFF;
+  --popover-foreground: #24213D;
+  --primary: #7047EB;
+  --primary-foreground: #FFFFFF;
+  --secondary: #EAE4FF;
+  --secondary-foreground: #5634C5;
+  --muted: #EFEDFA;
+  --muted-foreground: #77738F;
+  --accent: #DDF8F2;
+  --accent-foreground: #087F70;
+  --destructive: #F05270;
+  --destructive-foreground: #FFFFFF;
+  --border: #E5E0F2;
+  --input: #E5E0F2;
+  --ring: #9276F5;
+  --chart-1: #7047EB;
+  --chart-2: #16B8A6;
+  --chart-3: #FF7195;
+  --chart-4: #FFA940;
+  --chart-5: #438DFF;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #24213D;
+  --sidebar-primary: #7047EB;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #EEE9FF;
+  --sidebar-accent-foreground: #5634C5;
+  --sidebar-border: #E5E0F2;
+  --sidebar-ring: #9276F5;
+  --font-sans: "Geist Variable", Inter, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: monospace;
+  --radius: 0.85rem;
+  --tracking-normal: 0;
+  --spacing: 0.25rem;
+}
+
+.dark {
+  color-scheme: dark;
+  --background: #17152B;
+  --foreground: #F5F2FF;
+  --card: #211E3A;
+  --card-foreground: #F5F2FF;
+  --popover: #211E3A;
+  --popover-foreground: #F5F2FF;
+  --primary: #A48AFF;
+  --primary-foreground: #21183F;
+  --secondary: #302951;
+  --secondary-foreground: #E7DEFF;
+  --muted: #292641;
+  --muted-foreground: #B0A9CC;
+  --accent: #183D3B;
+  --accent-foreground: #76E5D1;
+  --destructive: #FF718B;
+  --destructive-foreground: #FFFFFF;
+  --border: #393451;
+  --input: #393451;
+  --ring: #A48AFF;
+  --chart-1: #A48AFF;
+  --chart-2: #35D6BE;
+  --chart-3: #FF789C;
+  --chart-4: #FFB454;
+  --chart-5: #68A8FF;
+  --sidebar: #1D1A34;
+  --sidebar-foreground: #F5F2FF;
+  --sidebar-primary: #A48AFF;
+  --sidebar-primary-foreground: #21183F;
+  --sidebar-accent: #302951;
+  --sidebar-accent-foreground: #E7DEFF;
+  --sidebar-border: #393451;
+  --sidebar-ring: #A48AFF;
+}
+
+/* ================================
+   GLOBAL STYLES
+================================ */
+
+@layer base {
+  * {
+    border-color: var(--border);
+    outline-color: color-mix(in srgb, var(--ring) 50%, transparent);
+  }
+
+  html {
+    min-width: 320px;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    letter-spacing: var(--tracking-normal);
+    min-height: 100vh;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+

@@ -1,0 +1,29 @@
+node_modules/
+dist/
+build/
+coverage/
+*.log
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.backup
+*.bak
+*.juicy-backup
+*.sonner-backup
+.DS_Store
+
+# Backup and repair files
+*.backup
+*.backup-*
+*.repair-backup
+*.style-backup
+*.before-fix
+*.before-*
+*.final-backup
+*.broken-backup
+*.broken.txt
+
+# Backup files with extensions
+*.backup.*
