@@ -1,6 +1,7 @@
 ﻿
 //console.log("Hello via Bun!");
-    import express, {  type Application,    type NextFunction,   type Request,  type Response, } from "express";
+import "../dns-config";
+import express, {  type Application,    type NextFunction,   type Request,  type Response, } from "express";
 import helmet from "helmet";
 import cookieParser from "cookie-parser";
 import morgan from "morgan";
@@ -18,7 +19,6 @@ import dashboardRouter from "./serveries/dashboard.serverice";
 import { serve } from "inngest/express";
 import { inngest } from "./inngest";
 import { generateExam, generateTimeTable } from "./inngest/function";
-
 
 dotenv.config();
 
