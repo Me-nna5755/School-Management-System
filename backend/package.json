@@ -4,26 +4,11 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "scripts": "nodemon --exec bun run src/server.ts",
-    "start": " bun --watch src/server.ts",
+    "start": "bun run src/server.ts",
     "typecheck": "bun check"
   },
-  "devDependencies": {
-    "@types/bcrypt": "^6.0.0",
-    "@types/bun": "^1.4.4",
-    "@types/cookie-parser": "^1.4.10",
-    "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.6",
-    "@types/jsonwebtoken": "^9.0.10",
-    "@types/morgan": "^1.9.10",
-    "@types/node": "^26.6.6",
-    "typescript": "^7.0.2"
-  },
-  "peerDependencies": {
-    "typescript": "^7"
-  },
   "dependencies": {
-    "@ai-sdk/google": "^4.0.121",
+    "@ai-sdk/google": "^4.0.122",
     "ai": "^7.0.173",
     "bcrypt": "^6.0.0",
     "cloudinary": "^2.11.0",
@@ -39,7 +24,18 @@
     "mongoose": "^9.12.0",
     "morgan": "^1.12.1",
     "multer": "^2.5.0",
-    "nodemailer": "^10.4.0",
+    "nodemailer": "^10.6.0",
     "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/bun": "^1.4.4",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
   }
 }

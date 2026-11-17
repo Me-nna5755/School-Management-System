@@ -180,26 +180,51 @@ export const getUserProfile = async (req:AuthRequest, res: Response): Promise<vo
     
 }
 
-export const logoutUser =async (req: Request, res: Response): Promise<void> => {
-    try {
-        res.cookie("jwt" ,"",{
-            httpOnly:true ,
-            expires :new Date(0),
-            sameSite: "strict",
-            secure: process.env.NODE_ENV === "production",
-            path: "/"
-        })
-        res.status(200).json({
-        status: "success",
-        message: "User logged out successfully"
-    });
-    } catch (error) {
-        console.log(error);
-        res.status(500).json({ status: "error",message: "Something went wrong!" , error});
+// export const logoutUser =async (req: Request, res: Response): Promise<void> => {
+//     try {
+//         res.cookie("jwt" ,"",{
+//             httpOnly:true ,
+//             expires :new Date(0),
+//             sameSite: "strict",
+//             secure: process.env.NODE_ENV === "production",
+//             path: "/"
+//         })
+//         res.status(200).json({
+//         status: "success",
+//         message: "User logged out successfully"
+//     });
+//     } catch (error) {
+//         console.log(error);
+//         res.status(500).json({ status: "error",message: "Something went wrong!" , error});
         
     
+//     }
+// }
+
+export const logoutUser = async (req: Request, res: Response): Promise<void> => {
+    try {
+        res.cookie("jwt", "", {
+            httpOnly: true,
+            expires: new Date(0),
+            sameSite: process.env.NODE_ENV === "production" ? "none" : "strict",
+            secure: process.env.NODE_ENV === "production",
+            path: "/"
+        });
+
+        res.status(200).json({
+            status: "success",
+            message: "User logged out successfully"
+        });
+
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({
+            status: "error",
+            message: "Something went wrong!",
+            error
+        });
     }
-}
+};
 
 export const getAllUser = async (req: Request, res: Response): Promise<void> => {
     try {
